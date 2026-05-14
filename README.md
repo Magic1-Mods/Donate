@@ -106,9 +106,9 @@ Memo/Tag: 503234574
 
 **Every donor gets a shoutout in the next release (unless you wish to stay anonymous)!**
 
-[![Telegram](https://img.shields.io/badge/Join-Telegram%20Channel-blue?style=for-the-badge&logo=telegram)](https://t.me/yourchannel)
-[![Telegram Group](https://img.shields.io/badge/Join-Telegram%20Group-blue?style=for-the-badge&logo=telegram)](https://t.me/yourgroup)
-[![YouTube](https://img.shields.io/badge/Subscribe-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/@yourchannel)
+[![Telegram](https://img.shields.io/badge/Join-Telegram%20Channel-blue?style=for-the-badge&logo=telegram)](https://t.me/retiredgamermods)
+[![Telegram Group](https://img.shields.io/badge/Join-Telegram%20Group-blue?style=for-the-badge&logo=telegram)](https://t.me/magicmodschat)
+[![YouTube](https://img.shields.io/badge/Subscribe-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/@magicmods-u5k?si=hiqVhMoGqdxfO7Mg)
 
 ### ❤️ Your support means the world to me! ❤️
 
