@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: transparent; color: {{TEXT_COLOR}}; padding: 4px 8px 8px 8px; -webkit-tap-highlight-color: transparent; }
+  .container { width: 100%; }
+  .header { text-align: center; margin-bottom: 6px; padding: 2px 0; }
+  .header-icon { font-size: 20px; }
+  .header-title { font-size: 13px; font-weight: 700; }
+  .header-sub { font-size: 8px; opacity: 0.5; }
+  .card-list { display: flex; flex-direction: column; gap: 5px; }
+  .card { background: {{CARD_COLOR}}; border-radius: 10px; padding: 6px 8px; cursor: pointer; border: 1px solid {{BORDER_COLOR}}; transition: all 0.1s ease; }
+  .card:active { transform: scale(0.98); opacity: 0.7; }
+  .card-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+  .left { flex: 1; min-width: 0; }
+  .network-row { display: flex; align-items: center; gap: 5px; margin-bottom: 3px; }
+  .emoji { font-size: 16px; }
+  .network-name { font-size: 11px; font-weight: 700; }
+  .chain { font-size: 7px; opacity: 0.5; margin-left: 4px; }
+  .tokens { font-size: 7px; opacity: 0.6; margin-bottom: 3px; }
+  .address { font-family: 'Courier New', monospace; font-size: 7px; word-break: break-all; opacity: 0.7; line-height: 1.2; }
+  .copy-btn { background: {{BORDER_COLOR}}; color: {{CARD_COLOR}}; border: none; padding: 3px 8px; border-radius: 14px; font-size: 7px; font-weight: 700; letter-spacing: 0.3px; cursor: pointer; flex-shrink: 0; transition: all 0.1s; }
+  .copy-btn.copied { background: #39D98A; color: #1A2E1A; }
+  .footer { text-align: center; margin-top: 8px; padding: 6px; font-size: 7px; opacity: 0.4; }
+  .instant { background: #39D98A20; color: #39D98A; border-radius: 6px; padding: 1px 4px; font-size: 5px; font-weight: 700; margin-left: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="header-icon">✨</div>
+    <div class="header-title">Support Magic Mods</div>
+    <div class="header-sub">tap any card to copy address</div>
+  </div>
+  <div class="card-list">
+    <!-- Opay -->
+    <div class="card" data-address="6555602697">
+      <div class="card-row">
+        <div class="left">
+          <div class="network-row"><span class="emoji">💚</span><span class="network-name">Opay</span><span class="chain">NGN · Instant</span><span class="instant">⚡</span></div>
+          <div class="tokens">Direct Transfer · No fees</div>
+          <div class="address">655 560 2697</div>
+        </div>
+        <button class="copy-btn">COPY</button>
+      </div>
+    </div>
+    <!-- USDT - Ethereum ERC20 -->
+    <div class="card" data-address="0xfc2deb7ad7217b6cb004011ffe366f4dc585f86e">
+      <div class="card-row">
+        <div class="left">
+          <div class="network-row"><span class="emoji">💙</span><span class="network-name">USDT</span><span class="chain">ERC20</span></div>
+          <div class="tokens">Ethereum Network</div>
+          <div class="address">0xfc2deb7ad7217b6cb004011ffe366f4dc585f86e</div>
+        </div>
+        <button class="copy-btn">COPY</button>
+      </div>
+    </div>
+    <!-- USDT - Tron TRC20 -->
+    <div class="card" data-address="TFEUopXJVC1EUapKBX7etkYjaAZNeyCaQi">
+      <div class="card-row">
+        <div class="left">
+          <div class="network-row"><span class="emoji">💜</span><span class="network-name">USDT</span><span class="chain">TRC20</span></div>
+          <div class="tokens">Tron Network</div>
+          <div class="address">TFEUopXJVC1EUapKBX7etkYjaAZNeyCaQi</div>
+        </div>
+        <button class="copy-btn">COPY</button>
+      </div>
+    </div>
+    <!-- USDT - TON -->
+    <div class="card" data-address="UQDyjlHy5-n3XoKmJ9OUSkmFJCtBWpNYk2eR1DVeN8nHlIek">
+      <div class="card-row">
+        <div class="left">
+          <div class="network-row"><span class="emoji">💎</span><span class="network-name">USDT</span><span class="chain">TON</span></div>
+          <div class="tokens">The Open Network</div>
+          <div class="address" style="font-size: 6.5px;">UQDyjlHy5-n3XoKmJ9OUSkmFJCtBWpNYk2eR1DVeN8nHlIek</div>
+        </div>
+        <button class="copy-btn">COPY</button>
+      </div>
+    </div>
+    <!-- Bitcoin BTC -->
+    <div class="card" data-address="1DUP4T7GzaD3b1PA2U1Az8zx5PcsTZHZkP">
+      <div class="card-row">
+        <div class="left">
+          <div class="network-row"><span class="emoji">🟧</span><span class="network-name">Bitcoin</span><span class="chain">BTC</span></div>
+          <div class="tokens">Native SegWit</div>
+          <div class="address">1DUP4T7GzaD3b1PA2U1Az8zx5PcsTZHZkP</div>
+        </div>
+        <button class="copy-btn">COPY</button>
+      </div>
+    </div>
+    <!-- XRP Ripple -->
+    <div class="card" data-address="r4rjtVAtG3gmcDHU3nmXdYKcVSbvGPF7Fa">
+      <div class="card-row">
+        <div class="left">
+          <div class="network-row"><span class="emoji">⚡</span><span class="network-name">XRP</span><span class="chain">Ripple</span></div>
+          <div class="tokens">Memo: 503234574</div>
+          <div class="address">r4rjtVAtG3gmcDHU3nmXdYKcVSbvGPF7Fa</div>
+          <div class="address" style="font-size: 6px; margin-top: 2px;">Memo: 503234574</div>
+        </div>
+        <button class="copy-btn">COPY</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">❤️ Thank you for supporting Magic Mods! ❤️</div>
+</div>
+<script>
+  (function() {
+    var cards = document.querySelectorAll('.card');
+    function copyToClipboard(text, btn) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() { showCopied(btn); }).catch(function() { fallbackCopy(text, btn); });
+      } else { fallbackCopy(text, btn); }
+    }
+    function fallbackCopy(text, btn) {
+      var textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.top = '-9999px';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try { document.execCommand('copy'); showCopied(btn); } catch(e) {}
+      document.body.removeChild(textarea);
+    }
+    function showCopied(btn) {
+      var originalText = btn.textContent;
+      btn.textContent = '✓';
+      btn.classList.add('copied');
+      setTimeout(function() { btn.textContent = originalText; btn.classList.remove('copied'); }, 1000);
+    }
+    function resetButtons() { document.querySelectorAll('.copy-btn').forEach(function(btn) { btn.textContent = 'COPY'; btn.classList.remove('copied'); }); }
+    cards.forEach(function(card) {
+      var btn = card.querySelector('.copy-btn');
+      var address = card.getAttribute('data-address');
+      var isXRP = address === 'r4rjtVAtG3gmcDHU3nmXdYKcVSbvGPF7Fa';
+      var fullAddress = isXRP ? address + ' (Memo: 503234574)' : address;
+      card.addEventListener('click', function(e) { if (e.target === btn) return; resetButtons(); copyToClipboard(fullAddress, btn); });
+      if (btn) { btn.addEventListener('click', function(e) { e.stopPropagation(); resetButtons(); copyToClipboard(fullAddress, btn); }); }
+    });
+  })();
+</script>
+</body>
+</html>
